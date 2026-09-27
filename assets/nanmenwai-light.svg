@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="248" viewBox="0 0 640 248" role="img" aria-label="南门外 · 校园互动叙事产品原型">
+<title>南门外 · 校园互动叙事产品原型</title>
+<rect width="640" height="248" fill="#F4F1E8"/>
+<path d="M501 44H562V248H501Z" fill="none" stroke="#25493D" opacity=".18" stroke-width="2"/>
+<path d="M514 55H575V248" fill="none" stroke="#25493D" opacity=".10" stroke-width="2"/>
+<g font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',Arial,sans-serif" fill="#25493D">
+  <text x="36" y="42" font-size="14" letter-spacing="1.8">01 / INTERACTIVE NARRATIVE</text>
+  <text x="35" y="146" font-size="62" letter-spacing="8">南门外</text>
+  <text x="38" y="204" font-size="18" letter-spacing="2">校园互动叙事 · 产品原型</text>
+</g>
+</svg>
