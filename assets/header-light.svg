@@ -2,13 +2,12 @@
 <title>一百 · AI 产品经理</title>
 <rect width="1280" height="360" fill="#F4F1E8"/>
 <g fill="#25493D" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',Arial,sans-serif">
-  <text x="56" y="52" font-size="14" letter-spacing="3">PRODUCT &amp; EXPERIENCE</text>
+  <text x="56" y="52" font-size="14" letter-spacing="3">AI PRODUCT PORTFOLIO</text>
   <text x="1224" y="52" text-anchor="end" font-size="14" letter-spacing="2">YI BAI / 100</text>
   <text x="56" y="181" font-size="84" font-weight="500" letter-spacing="7">一百</text>
   <text x="60" y="224" font-size="21" letter-spacing="3">AI PRODUCT MANAGER</text>
-  <text x="108" y="309" font-size="20" letter-spacing="1">以产品思考定义问题，以设计表达体验。</text>
 </g>
-<path d="M60 302H88" stroke="#25493D" stroke-width="2"/>
+<path d="M60 302H180" stroke="#25493D" stroke-width="2"/>
 <text x="1195" y="292" text-anchor="end" fill="#25493D" opacity=".13" font-family="Georgia,'Times New Roman',serif" font-size="284" letter-spacing="-26">100</text>
 <path d="M56 73H1224" stroke="#CDCFC3"/>
 <path d="M734 110V307" stroke="#CDCFC3"/>

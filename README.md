@@ -1,14 +1,14 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img alt="一百 · AI 产品经理｜以产品思考定义问题，以设计表达体验。" src="assets/header-light.svg" width="100%">
+  <img alt="一百 · AI 产品经理" src="assets/header-light.svg" width="100%">
 </picture>
 
 <br>
 
-你好，我是一百，一名有 **视觉传达设计背景的 AI 产品经理**。
+你好，我是一百，一名 **AI 产品经理**。
 
-这里记录我的产品原型、分析方法与交互探索。我关注 AI 能力如何进入真实的用户流程，也关注信息怎样被理解、选择怎样被表达，以及体验如何保持清晰与连贯。
+这里记录我的产品原型、分析方法与交互探索。
 
 ## 精选作品
 
@@ -58,6 +58,6 @@
 ---
 
 <p align="center">
-  <sub>一百 / AI PRODUCT & VISUAL DESIGN</sub><br>
+  <sub>一百 / AI PRODUCT MANAGER</sub><br>
   <sub>产品原型 · 分析方法 · 交互探索</sub>
 </p>
