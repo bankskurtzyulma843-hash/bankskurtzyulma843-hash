@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="306" viewBox="0 0 620 306" role="img" aria-label="南门外 · 校园互动叙事原型。故事选择、人物关系与进度保存。探索模型扩写与本地规则的协作。">
+<title>南门外 · 校园互动叙事原型。故事选择、人物关系与进度保存。探索模型扩写与本地规则的协作。</title>
+<rect x="1" y="1" width="618" height="304" rx="17" fill="#F8FAFC" stroke="#D9E1E8" stroke-width="2"/>
+<rect x="29" y="29" width="4" height="20" rx="2" fill="#267C67"/>
+<text x="45" y="45" font-family="'SFMono-Regular',Consolas,'Liberation Mono','PingFang SC',monospace" font-size="16" font-weight="400" fill="#586A7C" >01 / PRODUCT PROTOTYPE</text>
+<text x="32" y="100" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="34" font-weight="600" fill="#202D3B" >南门外</text>
+<text x="32" y="137" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="500" fill="#267C67" >校园互动叙事原型</text>
+<text x="32" y="184" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#586A7C" >故事选择、人物关系与进度保存。</text>
+<text x="32" y="217" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#586A7C" >探索模型扩写与本地规则的协作。</text>
+<path d="M32 245H588" stroke="#D9E1E8"/>
+<text x="32" y="279" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#586A7C" >产品原型 · 本地运行</text>
+<text x="586" y="280" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="400" fill="#267C67" text-anchor="end">↗</text>
+</svg>
