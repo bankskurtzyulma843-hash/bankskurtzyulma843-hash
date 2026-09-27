@@ -1,73 +1,94 @@
-"""Build original profile artwork with the Python standard library."""
+# -*- coding: utf-8 -*-
+"""Build profile assets. Layout reference: github.com/17lijunyi/17lijunyi."""
 from pathlib import Path
 from xml.sax.saxutils import escape
-OUT = Path(__file__).parent / 'assets' / 'v2'
+
+OUT = Path(__file__).parent / "assets" / "v3"
 OUT.mkdir(parents=True, exist_ok=True)
-FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif"
-MONO = "'SFMono-Regular',Consolas,'Liberation Mono','PingFang SC',monospace"
-
-def text(x, y, value, size=22, fill='currentColor', weight=400, mono=False, extra=''):
-    return f'<text x="{x}" y="{y}" font-family="{MONO if mono else FONT}" font-size="{size}" font-weight="{weight}" fill="{fill}" {extra}>{escape(value)}</text>'
-
-def save(name, width, height, title, body):
-    (OUT / name).write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{escape(title)}">\n<title>{escape(title)}</title>\n{body}\n</svg>\n', encoding='utf-8')
-
-for mode in ('light', 'dark'):
-    dark = mode == 'dark'
-    bg = '#111820' if dark else '#F8FAFC'
-    top = '#1A242F' if dark else '#EEF2F5'
-    ink = '#EAF0F5' if dark else '#202D3B'
-    muted = '#A6B4C4' if dark else '#586A7C'
-    line = '#344251' if dark else '#D9E1E8'
-    accent = '#83D7BA' if dark else '#267C67'
-    blue = '#91BFF7' if dark else '#376FA8'
-    terminal = f'''<defs><clipPath id="window"><rect x="1" y="1" width="1278" height="378" rx="22"/></clipPath></defs>
-<rect x="1" y="1" width="1278" height="378" rx="22" fill="{bg}" stroke="{line}" stroke-width="2"/>
-<path d="M0 0H1280V58H0Z" fill="{top}" clip-path="url(#window)"/>
-<path d="M1 58H1279" stroke="{line}"/>
-<circle cx="31" cy="29" r="7" fill="#E97771"/><circle cx="56" cy="29" r="7" fill="#E8BE59"/><circle cx="81" cy="29" r="7" fill="#6CBD94"/>
-{text(640, 35, 'yibai — portfolio', 17, muted, mono=True, extra='text-anchor="middle"')}
-{text(50, 108, 'yibai ~ % whoami', 22, blue, 600, True)}
-{text(50, 164, '一百 · AI 产品经理', 39, ink, 600)}
-{text(52, 199, 'AI PRODUCT MANAGER', 17, muted, mono=True, extra='letter-spacing="2"')}
-{text(50, 256, 'yibai ~ % ls projects/', 22, blue, 600, True)}
-{text(50, 294, '产品原型 / 产品拆解 / 交互实验', 23, ink)}
-<path d="M50 321H1230" stroke="{line}"/>
-{text(50, 354, '查看项目与产品思考', 19, accent, 500)}
-{text(1230, 355, '↗', 28, accent, 500, extra='text-anchor="end"')}
-<g fill="none" stroke="{accent}" opacity=".15" stroke-width="1.5">
-<rect x="978" y="104" width="184" height="156" rx="12"/><path d="M1002 128H1096M1002 147H1064M1002 232H1139"/>
-<rect x="1004" y="177" width="34" height="34" rx="5"/><rect x="1054" y="177" width="34" height="34" rx="5"/><rect x="1104" y="177" width="34" height="34" rx="5"/></g>'''
-    save(f'terminal-{mode}.svg', 1280, 380, '一百 · AI 产品经理 · 查看项目与产品思考', terminal)
-    cards = [
-        ('nanmenwai', '01 / PRODUCT PROTOTYPE', '南门外', '校园互动叙事原型', '故事选择、人物关系与进度保存。', '探索模型扩写与本地规则的协作。', '产品原型 · 本地运行', accent),
-        ('teardown', '02 / PRODUCT RESEARCH', '产品架构拆解', '可复用的产品分析 Skill', '从用户、技术、模型、数据出发，', '把产品判断关联到可核查的证据。', '分析方法 · 开源 Skill', blue),
+# Layout dimensions and visual rhythm follow the supplied reference.
+for theme in ('light', 'dark'):
+    dark = theme == 'dark'
+    bg, top, edge = ('#0d1117', '#161b22', '#30363d') if dark else ('#f8fafb', '#f1f4f6', '#d8e0e7')
+    ink, muted, blue, green = ('#c9d1d9', '#8b949e', '#58a6ff', '#56d364') if dark else ('#566573', '#9aa7b3', '#3478c9', '#4aa176')
+    lines = [
+        (93, '一百 OS — AI Product Portfolio', 'heading'),
+        (126, '[ OK ] Load 产品思维内核 product-thinking.ai', ''),
+        (157, '[ OK ] Mount /products    产品原型', ''),
+        (188, '[ OK ] Mount /research    产品架构拆解', ''),
+        (219, '[ OK ] Mount /experiments 交互实验', ''),
+        (267, 'yibai@mac ~ % whoami', 'command'),
+        (298, '一百 · AI 产品经理', ''),
+        (346, 'yibai@mac ~ % open projects.md', 'command'),
     ]
-    for key, label, title, subtitle, desc1, desc2, tag, color in cards:
-        body = f'''<rect x="1" y="1" width="618" height="304" rx="17" fill="{bg}" stroke="{line}" stroke-width="2"/>
-<rect x="29" y="29" width="4" height="20" rx="2" fill="{color}"/>
-{text(45, 45, label, 16, muted, mono=True)}
-{text(32, 100, title, 34, ink, 600)}
-{text(32, 137, subtitle, 21, color, 500)}
-{text(32, 184, desc1, 21, muted)}
-{text(32, 217, desc2, 21, muted)}
-<path d="M32 245H588" stroke="{line}"/>
-{text(32, 279, tag, 18, muted)}
-{text(586, 280, '↗', 26, color, extra='text-anchor="end"')}'''
-        save(f'{key}-{mode}.svg', 620, 306, f'{title} · {subtitle}。{desc1}{desc2}', body)
-    stars = [(929, 51), (1038, 88), (1166, 48), (965, 151), (1093, 174), (1224, 134)]
-    constellation = f'<path d="M929 51L1038 88L1166 48M1038 88L965 151L1093 174L1224 134" fill="none" stroke="{line}" stroke-width="2"/>'
-    constellation += ''.join(f'<circle cx="{x}" cy="{y}" r="4" fill="{accent}"/>' for x, y in stars)
-    book = f'<path d="M1031 109Q1057 98 1080 112Q1103 98 1129 109V148Q1102 137 1080 151Q1058 137 1031 148Z M1080 112V151" fill="{bg}" stroke="{accent}" stroke-width="2"/>'
-    story = f'''<rect x="1" y="1" width="1278" height="238" rx="17" fill="{bg}" stroke="{line}" stroke-width="2"/>
-<rect x="33" y="27" width="4" height="20" rx="2" fill="{accent}"/>
-{text(49, 43, '03 / INTERACTIVE EXPERIMENT', 16, muted, mono=True)}
-{text(36, 94, '人生之书 · 大学篇', 34, ink, 600)}
-{text(36, 136, '从星河到书本，探索大学四年的情景叙事与选择。', 22, muted)}
-{text(36, 170, '书本开场 · 四年星图 · 情景选择 · 记忆记录', 20, muted)}
-<path d="M36 189H1244" stroke="{line}"/>
-{text(36, 219, '交互实验 · 基于 BlueYard 场景扩展', 18, muted)}
-{text(1244, 220, '查看项目 ↗', 19, accent, 500, extra='text-anchor="end"')}
-{constellation}{book}'''
-    save(f'life-book-{mode}.svg', 1280, 240, '人生之书 · 大学篇。基于 BlueYard 场景扩展的校园叙事与交互实验。', story)
-print('Built 8 SVG assets with light and dark variants.')
+    boot = []
+    for i, (y, value, cls) in enumerate(lines):
+        content = escape(value).replace('OK', '<tspan class="success">OK</tspan>')
+        if cls == 'command':
+            content = content.replace('whoami', '<tspan class="normal">whoami</tspan>').replace('open projects.md', '<tspan class="normal">open projects.md</tspan>')
+        boot.append(f'<text class="boot {cls}" x="54" y="{y}" style="animation-delay:{.15+.33*i:.2f}s">{content}</text>')
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" role="img" aria-labelledby="title description" xml:space="preserve">
+<title id="title">一百 · AI 产品经理 · 项目启动终端</title>
+<desc id="description">产品原型、产品架构拆解与交互实验。点击查看一百的项目索引。</desc>
+<style>
+text {{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","PingFang SC","Microsoft YaHei",monospace;fill:{ink};font-size:16px}}
+.boot {{animation:boot 8s ease-in-out infinite;opacity:0}}
+.heading {{font-size:18px;font-weight:700}}
+.command {{fill:{blue};font-weight:700}}
+.normal {{fill:{ink};font-size:16px}}
+.success {{fill:{green};font-weight:700}}
+.ready {{fill:{blue};font-size:17px;font-weight:700;animation:ready 8s ease-in-out infinite;opacity:0}}
+.invite {{font-size:14px;letter-spacing:1.8px;animation:invite 8s ease-in-out infinite;opacity:0}}
+.arrow {{fill:{blue};font-size:22px;animation:arrow 1.4s 3.9s ease-in-out infinite;opacity:0}}
+@keyframes boot {{0%,5%{{opacity:0;transform:translateY(5px)}}10%,77%{{opacity:1;transform:translateY(0)}}88%,100%{{opacity:0;transform:translateY(-2px)}}}}
+@keyframes ready {{0%,42%{{opacity:0;transform:translateY(5px)}}48%,82%{{opacity:1;transform:translateY(0)}}92%,100%{{opacity:0}}}}
+@keyframes invite {{0%,50%,92%,100%{{opacity:0}}57%,84%{{opacity:1}}}}
+@keyframes arrow {{0%,100%{{opacity:.35;transform:translateX(0)}}50%{{opacity:1;transform:translateX(7px)}}}}
+@media(prefers-reduced-motion:reduce){{.boot,.ready,.invite,.arrow{{animation:none;opacity:1;transform:none}}}}
+</style>
+<rect x="1" y="1" width="998" height="518" rx="18" fill="{bg}" stroke="{edge}" stroke-width="2"/>
+<path d="M19 2H981Q999 2 999 20V51H1V20Q1 2 19 2Z" fill="{top}"/>
+<path d="M1 52H999" stroke="{edge}"/>
+<circle cx="24" cy="27" r="7" fill="#ef6461"/><circle cx="47" cy="27" r="7" fill="#efbd4e"/><circle cx="70" cy="27" r="7" fill="#55b96f"/>
+<text x="500" y="31" text-anchor="middle" style="fill:{muted};font-size:12px;letter-spacing:.8px">yibai@mac — portfolio — 100×30</text>
+{''.join(boot)}
+<text class="ready" x="54" y="389">SYSTEM READY</text>
+<text class="invite" x="500" y="448" text-anchor="middle">点击查看项目索引 · 一百</text>
+<text class="arrow" x="500" y="483" text-anchor="middle">→</text>
+</svg>
+'''
+    (OUT / f'portfolio-launch-{theme}.svg').write_text(svg)
+
+projects = [
+    ("nanmenwai", "南门外 · 校园互动叙事", ["从入学到毕业的故事选择、人物关系与手记回看。", "本地规则管理状态，探索模型扩写与失败回退。"], "HTML", "#e34c26"),
+    ("life-book", "人生之书 · 大学篇", ["从星河到书本，探索大学四年的情景与选择。", "基于 BlueYard 场景扩展叙事，支持记忆记录。"], "HTML", "#e34c26"),
+    ("teardown", "产品架构拆解", ["基于真实证据，从用户、技术、模型、数据四层", "拆解产品，整理成可复用的分析工作流。"], "Skill", "#8250df"),
+]
+for theme in ("light", "dark"):
+    bg, border, muted, link = (
+        ("#ffffff", "#d1d9e0", "#59636e", "#0969da")
+        if theme == "light"
+        else ("#0d1117", "#30363d", "#8b949e", "#58a6ff")
+    )
+    for key, title, lines, language, dot in projects:
+        desc = "".join(lines)
+        svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="620" height="210" viewBox="0 0 620 210" role="img" aria-labelledby="title desc">
+<title id="title">{escape(title)}</title><desc id="desc">{escape(desc)}</desc>
+<rect x=".75" y=".75" width="598.5" height="208.5" rx="9" fill="{bg}" stroke="{border}" stroke-width="1.5"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans CJK SC,PingFang SC,Microsoft YaHei,sans-serif">
+<g transform="translate(24 24)" fill="none" stroke="{muted}" stroke-width="1.7"><path d="M3 2h15v20H3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm-2 15h17M5 17v7l3-2 3 2v-7"/></g>
+<text x="56" y="43" fill="{link}" font-size="22" font-weight="600">{escape(title)}</text>
+<rect x="512" y="23" width="64" height="26" rx="13" fill="none" stroke="{border}"/>
+<text x="544" y="41" text-anchor="middle" fill="{muted}" font-size="15">Public</text>
+<text x="24" y="81" fill="{muted}" font-size="19">{escape(lines[0])}</text>
+<text x="24" y="108" fill="{muted}" font-size="19">{escape(lines[1])}</text>
+<circle cx="31" cy="177" r="7" fill="{dot}"/>
+<text x="47" y="183" fill="{muted}" font-size="17">{language}</text>
+<g transform="translate(230 166)" fill="none" stroke="{muted}" stroke-width="1.6"><path d="m10 1 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L1 7.6l6.2-.9Z"/></g>
+<text x="258" y="183" fill="{muted}" font-size="17">0</text>
+<g transform="translate(350 166)" fill="none" stroke="{muted}" stroke-width="1.6"><circle cx="5" cy="3" r="2.5"/><circle cx="15" cy="3" r="2.5"/><circle cx="10" cy="17" r="2.5"/><path d="M5 5.5V8c0 3 10 3 10 0V5.5M10 10v4.5"/></g>
+<text x="378" y="183" fill="{muted}" font-size="17">0</text>
+</g></svg>
+'''
+        (OUT / f"{key}-{theme}.svg").write_text(svg)
+print("Built 8 reference-matched SVGs.")
+
