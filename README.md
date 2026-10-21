@@ -27,6 +27,10 @@
   <a href="https://github.com/bankskurtzyulma843-hash/paper-lens"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/v3/paper-lens-dark.svg"><img width="49%" src="assets/v3/paper-lens-light.svg" alt="论文透镜：按真实章节导读，逐句翻译，整理术语并保留原文引用。适配 Codex 的论文阅读 Skill。"></picture></a>
 </p>
 
+<p>
+  <a href="https://github.com/bankskurtzyulma843-hash/zhihu-zhishu"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/v3/zhishu-dark.svg"><img width="49%" src="assets/v3/zhishu-light.svg" alt="知树：把收藏整理成观点，以树的生长呈现思考过程。收藏、三轮追问与文章整理的静态前端 Demo。"></picture></a>
+</p>
+
 [查看全部项目 →](./PROJECTS.md) · [体验人生之书 →](https://bankskurtzyulma843-hash.github.io/blueyard-galaxy/)
 
 <sub>南门外为本地原型，真实模型调用待验证。人生之书基于 BlueYard 场景扩展，原始设计与实现来自 Unseen Studio；详见项目文档。</sub>
@@ -43,6 +47,7 @@
 - [产品架构拆解：从真实任务到可核查的证据](./PROJECTS.md#02--产品架构拆解)
 - [人生之书：情景选择、记忆记录与交互探索](./PROJECTS.md#03--人生之书--大学篇)
 - [论文透镜：按原文章节阅读，保留术语与引用](./PROJECTS.md#04--论文透镜)
+- [知树：从收藏、三轮追问到文章草稿](./PROJECTS.md#05--知树)
 
 [查看全部项目记录 →](./PROJECTS.md) · [在线体验 →](https://bankskurtzyulma843-hash.github.io/blueyard-galaxy/)
 

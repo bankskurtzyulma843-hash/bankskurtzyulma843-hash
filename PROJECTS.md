@@ -2,7 +2,7 @@
 
 [← 返回个人主页](https://github.com/bankskurtzyulma843-hash)
 
-这里整理四个项目的内容、关键取舍与当前状态。
+这里整理五个项目的内容、关键取舍与当前状态。
 
 ## 01 · 南门外
 
@@ -77,3 +77,23 @@
 基于 [hubooooooo/Paper-Reading](https://github.com/hubooooooo/Paper-Reading) 的 MIT 许可项目适配为 Skill，保留来源与许可说明；这是论文阅读工作流的适配，未迁移原项目完整应用。
 
 [查看 Skill、安装与来源说明 ↗](https://github.com/bankskurtzyulma843-hash/paper-lens)
+
+## 05 · 知树
+
+**收藏整理与观点写作的交互 Demo**
+
+把收藏作为材料，写下自己的观点，再通过理由、异见、边界三轮追问补充思考，最后整理成可编辑的文章草稿。用种子、根系、树干、树叶和果实的生长动效，呈现从材料到文章的过程。
+
+### 关键取舍
+
+- **让收藏进入具体思考。** 选择一条收藏作为回应对象，围绕它形成自己的主要观点。
+- **让追问有明确方向。** 依次补充理由、回应不同看法、说明观点的适用边界。
+- **让过程可见、草稿可改。** 用树的生长阶段呈现进度，文章经用户编辑与确认后才结成果实。
+
+### 当前状态与来源
+
+静态前端 Demo，使用原生 HTML、CSS 与 JavaScript。文章由本地结构整理生成，未接入在线 AI 或账户云同步；同题树林的发布、异见与采集均为本地演示，不会发布给真实知乎用户。刷新或重新打开页面会重置本次演示数据。
+
+当前仓库 fork 自 [CageEcho/zhihu-zhishu](https://github.com/CageEcho/zhihu-zhishu)，产品流程、视觉素材与实现来源见仓库文档。
+
+[查看项目与运行说明 ↗](https://github.com/bankskurtzyulma843-hash/zhihu-zhishu)
