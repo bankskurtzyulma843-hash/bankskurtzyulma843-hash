@@ -2,7 +2,7 @@
 
 [← 返回个人主页](https://github.com/bankskurtzyulma843-hash)
 
-这里整理三个项目的内容、关键取舍与当前状态。
+这里整理四个项目的内容、关键取舍与当前状态。
 
 ## 01 · 南门外
 
@@ -57,3 +57,23 @@
 已提供 GitHub Pages 在线体验。项目在 BlueYard 原有粒子场景与交互引擎上扩展叙事层；原始设计与实现来自 Unseen Studio，素材与改编说明见项目文档。
 
 [在线体验 ↗](https://bankskurtzyulma843-hash.github.io/blueyard-galaxy/) · [查看项目与来源说明 ↗](https://github.com/bankskurtzyulma843-hash/blueyard-galaxy)
+
+## 04 · 论文透镜
+
+**适配 Codex 的论文阅读 Skill**
+
+接收论文 PDF、txt、md、链接或正文，按原文章节生成中文导读，提供逐句中英对照、统一术语表与带原文出处的论文问答。
+
+### 关键取舍
+
+- **沿用论文真实结构。** 按可读取的原文章节组织导读，保留来源位置与阅读范围。
+- **让解释可回查。** 区分论文原文、中文翻译与延伸解释，术语和回答尽量回到原文。
+- **在 Codex 中完成阅读。** 由当前 Codex 模型执行阅读、翻译和问答，辅以本地解析与词法检索，无需为此另配模型 API Key。
+
+### 当前状态与来源
+
+已封装为本地 Codex Skill，并通过结构校验、本地解析与检索测试、合成论文试读；复杂 PDF、OCR 与长文阅读尚未全面验证。
+
+基于 [hubooooooo/Paper-Reading](https://github.com/hubooooooo/Paper-Reading) 的 MIT 许可项目适配为 Skill，保留来源与许可说明；这是论文阅读工作流的适配，未迁移原项目完整应用。
+
+[查看 Skill、安装与来源说明 ↗](https://github.com/bankskurtzyulma843-hash/paper-lens)

@@ -24,6 +24,7 @@
 
 <p>
   <a href="https://github.com/bankskurtzyulma843-hash/-/tree/main/product-architecture-teardown"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/v3/teardown-dark.svg"><img width="49%" src="assets/v3/teardown-light.svg" alt="产品架构拆解：基于真实证据，从用户、技术、模型、数据四层拆解产品，整理成可复用的分析工作流。"></picture></a>
+  <a href="https://github.com/bankskurtzyulma843-hash/paper-lens"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/v3/paper-lens-dark.svg"><img width="49%" src="assets/v3/paper-lens-light.svg" alt="论文透镜：按真实章节导读，逐句翻译，整理术语并保留原文引用。适配 Codex 的论文阅读 Skill。"></picture></a>
 </p>
 
 [查看全部项目 →](./PROJECTS.md) · [体验人生之书 →](https://bankskurtzyulma843-hash.github.io/blueyard-galaxy/)
@@ -41,6 +42,7 @@
 - [南门外：模型扩写、本地规则与失败回退](./PROJECTS.md#01--南门外)
 - [产品架构拆解：从真实任务到可核查的证据](./PROJECTS.md#02--产品架构拆解)
 - [人生之书：情景选择、记忆记录与交互探索](./PROJECTS.md#03--人生之书--大学篇)
+- [论文透镜：按原文章节阅读，保留术语与引用](./PROJECTS.md#04--论文透镜)
 
 [查看全部项目记录 →](./PROJECTS.md) · [在线体验 →](https://bankskurtzyulma843-hash.github.io/blueyard-galaxy/)
 
