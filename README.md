@@ -8,7 +8,7 @@
 目前通过互动叙事产品、产品架构拆解与交互实验，积累 AI 产品实践。\
 希望把 AI 能力做成真正有人使用的产品。
 
-🌐 [在线体验](https://bankskurtzyulma843-hash.github.io/blueyard-galaxy/) · 🧩 [开源 Skill](https://github.com/bankskurtzyulma843-hash/-/tree/main/product-architecture-teardown) · 📂 [项目索引](./PROJECTS.md)
+🌐 [打开拆拆网页](https://bankskurtzyulma843-hash.github.io/chaichai-workspace/) · 🧩 [开源 Skill](https://github.com/bankskurtzyulma843-hash/-/tree/main/product-architecture-teardown) · 📂 [项目索引](./PROJECTS.md)
 
 ---
 
@@ -24,10 +24,10 @@
 
 <p>
   <a href="https://github.com/bankskurtzyulma843-hash/zhihu-zhishu"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/v3/zhishu-dark.svg"><img width="49%" src="assets/v3/zhishu-light.svg" alt="知树：把收藏整理成观点，以树的生长呈现思考过程。收藏、三轮追问与文章整理的静态前端 Demo。"></picture></a>
-  <a href="https://github.com/bankskurtzyulma843-hash/chaichai-workspace"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/v3/chaichai-dark.svg"><img width="49%" src="assets/v3/chaichai-light.svg" alt="拆拆对话工作台：自配模型 API，通过对话调用拆拆工具。基于 hubooooooo/chaichai 扩展独立的配置与对话页面，本地运行。"></picture></a>
+  <a href="https://bankskurtzyulma843-hash.github.io/chaichai-workspace/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/v3/chaichai-dark.svg"><img width="49%" src="assets/v3/chaichai-light.svg" alt="拆拆对话工作台：打开网页，配置自己的 API，开始模型对话。基于 hubooooooo/chaichai 扩展；本机工具通过本地版本使用。"></picture></a>
 </p>
 
-[查看全部项目 →](./PROJECTS.md) · [体验人生之书 →](https://bankskurtzyulma843-hash.github.io/blueyard-galaxy/)
+[查看全部项目 →](./PROJECTS.md) · [打开拆拆网页 →](https://bankskurtzyulma843-hash.github.io/chaichai-workspace/)
 
 <sub>南门外为本地原型，真实模型调用待验证。人生之书基于 BlueYard 场景扩展，原始设计与实现来自 Unseen Studio；详见项目文档。</sub>
 <!-- PROJECTS:END -->
