@@ -18,11 +18,6 @@
 
 <!-- PROJECTS:START -->
 <p>
-  <a href="https://github.com/bankskurtzyulma843-hash/zhihu-life-book"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/v3/nanmenwai-dark.svg"><img width="49%" src="assets/v3/nanmenwai-light.svg" alt="南门外 · 校园互动叙事：从入学到毕业的故事选择、人物关系与手记回看。本地规则管理状态，探索模型扩写与失败回退。"></picture></a>
-  <a href="https://github.com/bankskurtzyulma843-hash/blueyard-galaxy"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/v3/life-book-dark.svg"><img width="49%" src="assets/v3/life-book-light.svg" alt="人生之书 · 大学篇：从星河到书本，探索大学四年的情景与选择。基于 BlueYard 场景扩展叙事，支持记忆记录。"></picture></a>
-</p>
-
-<p>
   <a href="https://github.com/bankskurtzyulma843-hash/-/tree/main/product-architecture-teardown"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/v3/teardown-dark.svg"><img width="49%" src="assets/v3/teardown-light.svg" alt="产品架构拆解：基于真实证据，从用户、技术、模型、数据四层拆解产品，整理成可复用的分析工作流。"></picture></a>
   <a href="https://github.com/bankskurtzyulma843-hash/paper-lens"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/v3/paper-lens-dark.svg"><img width="49%" src="assets/v3/paper-lens-light.svg" alt="论文透镜：按真实章节导读，逐句翻译，整理术语并保留原文引用。适配 Codex 的论文阅读 Skill。"></picture></a>
 </p>
