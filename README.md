@@ -29,6 +29,7 @@
 
 <p>
   <a href="https://github.com/bankskurtzyulma843-hash/zhihu-zhishu"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/v3/zhishu-dark.svg"><img width="49%" src="assets/v3/zhishu-light.svg" alt="知树：把收藏整理成观点，以树的生长呈现思考过程。收藏、三轮追问与文章整理的静态前端 Demo。"></picture></a>
+  <a href="https://github.com/bankskurtzyulma843-hash/chaichai-workspace"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/v3/chaichai-dark.svg"><img width="49%" src="assets/v3/chaichai-light.svg" alt="拆拆对话工作台：自配模型 API，通过对话调用拆拆工具。基于 hubooooooo/chaichai 扩展独立的配置与对话页面，本地运行。"></picture></a>
 </p>
 
 [查看全部项目 →](./PROJECTS.md) · [体验人生之书 →](https://bankskurtzyulma843-hash.github.io/blueyard-galaxy/)
@@ -48,6 +49,7 @@
 - [人生之书：情景选择、记忆记录与交互探索](./PROJECTS.md#03--人生之书--大学篇)
 - [论文透镜：按原文章节阅读，保留术语与引用](./PROJECTS.md#04--论文透镜)
 - [知树：从收藏、三轮追问到文章草稿](./PROJECTS.md#05--知树)
+- [拆拆对话工作台：自配 API、对话工具调用与本地会话](./PROJECTS.md#06--拆拆对话工作台)
 
 [查看全部项目记录 →](./PROJECTS.md) · [在线体验 →](https://bankskurtzyulma843-hash.github.io/blueyard-galaxy/)
 

@@ -2,7 +2,7 @@
 
 [← 返回个人主页](https://github.com/bankskurtzyulma843-hash)
 
-这里整理五个项目的内容、关键取舍与当前状态。
+这里整理六个项目的内容、关键取舍与当前状态。
 
 ## 01 · 南门外
 
@@ -97,3 +97,23 @@
 当前仓库 fork 自 [CageEcho/zhihu-zhishu](https://github.com/CageEcho/zhihu-zhishu)，产品流程、视觉素材与实现来源见仓库文档。
 
 [查看项目与运行说明 ↗](https://github.com/bankskurtzyulma843-hash/zhihu-zhishu)
+
+## 06 · 拆拆对话工作台
+
+**自配模型 API 的本地对话界面**
+
+用户填写自己的模型服务地址、模型名和 API Key，通过对话调用拆拆 MCP 工具，查看流式回复、工具参数与结果。深色终端界面支持会话切换、停止任务和 Markdown 导出。
+
+### 关键取舍
+
+- **沿用现有工具能力。** 独立增加配置、对话与 MCP 适配层，保留上游拆拆核心及证据体系。
+- **把执行过程展示出来。** 工具记录可展开，涉及外部影响或缺少明确只读元数据的调用需要用户确认。
+- **在用户电脑上运行。** Key 仅保存在本地服务内存中，对话保存在当前浏览器；模型请求发送到用户配置的 API。
+
+### 当前状态与来源
+
+已提供开源源码和本地启动说明，已验证 Apple 芯片 Mac。界面层 27 项自动测试已通过，模型调用使用本机测试服务；真实本仓 MCP 已完成工具目录与会话连接检查。真实模型、带目标的完整分析和可选引擎仍需按场景验证。
+
+基于 [hubooooooo/chaichai](https://github.com/hubooooooo/chaichai) 的 MIT 开源工具箱，新增配置与对话界面；保留上游提交历史、版权和第三方许可。当前交付为本地应用。
+
+[查看源码、界面截图与本地启动说明 ↗](https://github.com/bankskurtzyulma843-hash/chaichai-workspace)
